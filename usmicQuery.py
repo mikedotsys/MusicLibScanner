@@ -19,8 +19,7 @@ def main():
         music_scan = csv.writer(f, delimiter=',', quotechar='"', quoting=csv.QUOTE_ALL)
         music_scan.writerow(
             ['file_path', 'file_name', 'file_ext', 'artist', 'title', 'album', 'track', 'track_total', 'disc',
-             'disc_total',
-             'duration', 'genre', 'year', 'filesize', 'bitrate'])
+             'disc_total', 'duration', 'genre', 'year', 'filesize', 'bitrate'])
 
         # scan the directories
         for root, dirs, files in os.walk(scan_dir):
